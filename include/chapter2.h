@@ -26,4 +26,35 @@ namespace chapter2 {
     // 2.63
     unsigned srl(unsigned x, int k);
     int sra(int x, int k);
+
+    // 2.64
+    bool andOddOne(unsigned x);
+
+    // 2.65
+    int oddOnes(unsigned x);
+
+    // 2.66
+    int leftMostOne(unsigned x);
+
+    // 2.67
+    int intSizeIs32();
+
+    // 2.68
+    int lowerOneMask(int n);
+
+    // 2.69
+    unsigned rotateLeft(unsigned x, int n);
+
+    // 2.70
+    int fitsBits(int x, int n);
+
+    // 2.71
+    typedef unsigned packet_t;
+    int xbyte(packet_t word, int byteIndex);
+
+    // 2.73
+    int saturatingAdd(int x, int y);
+
+    // 2.74
+    int tsubOk(int x, int y);
 }
