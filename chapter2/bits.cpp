@@ -140,9 +140,9 @@ namespace chapter2 {
 
     // 2.74
     int tsubOk(int x, int y) {
-        // y == INT_MIN must overflow
+        // x < 0 && y == INT_MIN ==> ok
+        // y != INT_MIN ==> check x + (-y[positive])
         return ((x & INT_MIN) && y == INT_MIN) || (y != INT_MIN && (saturatingAdd(x, -y) == (x - y)));
-
     }
 
 }
